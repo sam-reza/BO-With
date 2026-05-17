@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="layouts">
+        <item>@string/list</item>
+        <item>@string/grid</item>
+    </string-array>
+    <string-array name="layout_values">
+        <item>@string/listValue</item>
+        <item>@string/gridValue</item>
+    </string-array>
+    <string name="listValue">0</string>
+    <string name="gridValue">1</string>
+
+    <string-array name="sizes">
+        <item>@string/small</item>
+        <item>@string/medium</item>
+    </string-array>
+    <string-array name="size_values">
+        <item>@string/smallValue</item>
+        <item>@string/mediumValue</item>
+    </string-array>
+    <string name="smallValue">0</string>
+    <string name="mediumValue">1</string>
+
+    <string-array name="themes">
+        <item>@string/light</item>
+        <item>@string/dark</item>
+    </string-array>
+    <string-array name="theme_values">
+        <item>@string/lightValue</item>
+        <item>@string/darkValue</item>
+    </string-array>
+    <string name="lightValue">0</string>
+    <string name="darkValue">1</string>
+</resources>
