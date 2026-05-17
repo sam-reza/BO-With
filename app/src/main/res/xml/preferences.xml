@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <PreferenceCategory
+        android:key="pref_key_popup_layout_group"
+        android:title="@string/popup_options">
+        <com.aboutmycode.betteropenwith.settings.NumberPickerDialogPreference
+            android:defaultValue="@integer/default_timeout"
+            android:dialogMessage="@string/set_time_message"
+            android:key="timeout"
+            android:max="120"
+            android:numeric="integer"
+            android:title="@string/timeout"
+            app:min="1"
+            app:summaryKey="@string/timeoutSummary" />
+        <com.aboutmycode.betteropenwith.settings.WorkingListPreference
+            android:defaultValue="@string/listValue"
+            android:entries="@array/layouts"
+            android:entryValues="@array/layout_values"
+            android:key="layout"
+            android:summary="@string/layout_summary"
+            android:title="@string/layout" />
+        <com.aboutmycode.betteropenwith.settings.NumberPickerDialogPreference
+            android:defaultValue="@integer/default_columns"
+            android:dialogMessage="@string/select_columns"
+            android:key="gridColumns"
+            android:max="10"
+            android:numeric="integer"
+            android:title="@string/column_number"
+            app:min="1"
+            app:summaryKey="%s" />
+        <CheckBoxPreference
+            android:key="iconOnly"
+            android:title="@string/iconOnly"
+            android:defaultValue="false"/>
+        <com.aboutmycode.betteropenwith.settings.WorkingListPreference
+            android:key="size"
+            android:title="@string/textSize"
+            android:summary="%s"
+            android:entries="@array/sizes"
+            android:entryValues="@array/size_values"
+            android:defaultValue="@string/mediumValue"/>
+        <com.aboutmycode.betteropenwith.settings.WorkingListPreference
+            android:key="theme"
+            android:title="@string/theme"
+            android:summary="%s"
+            android:entries="@array/themes"
+            android:entryValues="@array/theme_values"
+            android:defaultValue="@string/lightValue"/>
+    </PreferenceCategory>
+</PreferenceScreen>

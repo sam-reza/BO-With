@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ViewFlipper xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/view_flipper"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingBottom="5dp"
+        android:paddingTop="10dp">
+
+        <TextView
+            android:id="@+id/selectedAppLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:text="@string/select_preferred_app"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <include
+            layout="@android:layout/list_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/skipListCheckBox"
+            android:layout_below="@+id/selectedAppLabel" />
+
+        <CheckBox
+            android:id="@+id/skipListCheckBox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:text="@string/start_preferred" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/disabledTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Pdf Files will not be handled with Auto Open With"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:gravity="center" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/noAppsTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="No app found to handle Pdf Files"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:gravity="center" />
+    </LinearLayout>
+</ViewFlipper>
