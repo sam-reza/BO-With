@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="layouts">
+        <item>@string/list</item>
+        <item>@string/grid</item>
+    </string-array>
+    <string-array name="layout_values">
+        <item>@string/listValue</item>
+        <item>@string/gridValue</item>
+    </string-array>
+    <string name="listValue">0</string>
+    <string name="gridValue">1</string>
+
+    <string-array name="sizes">
+        <item>@string/small</item>
+        <item>@string/medium</item>
+    </string-array>
+    <string-array name="size_values">
+        <item>@string/smallValue</item>
+        <item>@string/mediumValue</item>
+    </string-array>
+    <string name="smallValue">0</string>
+    <string name="mediumValue">1</string>
+
+    <string-array name="themes">
+        <item>@string/light</item>
+        <item>@string/dark</item>
+    </string-array>
+    <string-array name="theme_values">
+        <item>@string/lightValue</item>
+        <item>@string/darkValue</item>
+    </string-array>
+    <string name="lightValue">0</string>
+    <string name="darkValue">1</string>
+
+    <string-array name="pref_languages">
+        <item>@string/systemLocale</item>
+        <item>English</item>
+        <item>Deutsch</item>
+        <item>Français</item>
+        <item>Español</item>
+        <item>Português</item>
+        <item>Italiano</item>
+        <item>Català</item>
+        <item>Čeština</item>
+        <item>العربية</item>
+        <item>Ελληνική</item>
+    </string-array>
+    <string-array name="pref_languages_values">
+        <item>null</item>
+        <item>en</item>
+        <item>de</item>
+        <item>fr</item>
+        <item>es</item>
+        <item>pt</item>
+        <item>it</item>
+        <item>ca</item>
+        <item>cs</item>
+        <item>ar</item>
+        <item>el</item>
+    </string-array>
+</resources>

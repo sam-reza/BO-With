@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<changelog bulletedList="true">
+    <changelogversion changeDate="October 20, 2015" versionName="1.4.1">
+        <changelogtext>
+            [b]New![/b] Added Greek translation
+        </changelogtext>
+        <changelogtext>
+            [b]Bug fix![/b] Fixed compatibility issues with Android Marshmallow.
+        </changelogtext>
+    </changelogversion>
+    <changelogversion changeDate="February 2, 2015" versionName="1.4">
+        <changelogtext>
+            [b]New![/b] Added option to hide apps from list
+        </changelogtext>
+        <changelogtext>
+            [b]New![/b] Added handler for dialer, calendar and camera
+        </changelogtext>
+        <changelogtext>
+            [b]Bug fix![/b] Fixed multiple small bugs.
+        </changelogtext>
+    </changelogversion>
+    <changelogversion changeDate="8 December, 2014" versionName="1.3.1">
+        <changelogtext>
+            [b]New![/b] Added Czech translation
+        </changelogtext>
+        <changelogtext>
+            [b]Bug fix![/b] Fixed multiple small bugs.
+        </changelogtext>
+    </changelogversion>
+    <changelogversion changeDate="16 October, 2014" versionName="1.2.1">
+        <changelogtext>
+            [b]Bug fix![/b] Fixed black background issue when handling urls.
+        </changelogtext>
+        <changelogtext>
+            Updated Catalan translation
+        </changelogtext>
+    </changelogversion>
+    <changelogversion changeDate="13 October, 2014" versionName="1.2">
+        <changelogtext>
+            [b]New![/b] You can now set preferred app for popular websites such as Youtube, Reddit, Play Store and so on
+        </changelogtext>
+        <changelogtext>
+            [b]New![/b] Added support for handling epub files, text files, location and email links
+        </changelogtext>
+        <changelogtext>
+            [b]New![/b] Added German, French, Italian, Portuguese, Spanish, Catalan and Arabic translations
+        </changelogtext>
+        <changelogtext>
+            [b]New![/b] Automatically remembers last used app when no preferred app is set and pauses times when settings button is clicked
+        </changelogtext>
+    </changelogversion>
+    <changelogversion changeDate="29 July, 2014" versionName="1.0">
+        <changelogtext>
+            First public release. Hooray!
+        </changelogtext>
+    </changelogversion>
+    <changelogversion changeDate="22 July, 2014" versionName="0.8.2 Beta">
+        <changelogtext>
+            [b]Bug fix![/b] Fixed app crash which was occurring when opening Google+ links
+        </changelogtext>
+        <changelogtext>
+            UI changes
+        </changelogtext>
+    </changelogversion>
+    <changelogversion changeDate="15 July, 2014" versionName="0.8.1 Beta">
+        <changelogtext>
+            [b]New![/b] Added Browser handling
+        </changelogtext>
+        <changelogtext>[b]New![/b] You can now override timeout for filetypes
+        </changelogtext>
+        <changelogtext>
+            Minor other improvements and bug fixes
+        </changelogtext>
+    </changelogversion>
+    <changelogversion changeDate="6 July, 2014" versionName="0.3.1 Beta">
+        <changelogtext>Initial Release</changelogtext>
+    </changelogversion>
+</changelog>
