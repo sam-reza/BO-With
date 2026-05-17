@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.aboutmycode.betteropenwith">
+    package="org.betteropenwith">
 
     <application
         android:name=".BetterOpenWithApplication"
         android:allowBackup="true"
         android:icon="@drawable/ic_launcher"
-        android:label="@string/app_name"
+        android:label="BO-With"
         android:theme="@style/AppTheme">
         <activity
             android:name=".HandlerListActivity"
-            android:label="@string/app_name">
+            android:label="BO-With">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -24,7 +24,7 @@
             android:theme="@android:style/Theme.Holo.Dialog" />
 
         <activity-alias
-            android:name="com.aboutmycode.openwith.app.PdfFileHandlerActivity"
+            android:name="org.betteropenwith.app.PdfFileHandlerActivity"
             android:targetActivity=".FileHandlerActivity">
             <intent-filter>
                 <action android:name="android.intent.action.VIEW" />
@@ -55,7 +55,7 @@
                 android:value="1" />
         </activity-alias>
         <activity-alias
-            android:name="com.aboutmycode.openwith.app.VideoFileHandlerActivity"
+            android:name="org.betteropenwith.app.VideoFileHandlerActivity"
             android:targetActivity=".FileHandlerActivity">
             <intent-filter>
                 <action android:name="android.intent.action.VIEW" />
@@ -100,7 +100,7 @@
                 android:value="4" />
         </activity-alias>
         <activity-alias
-            android:name="com.aboutmycode.openwith.app.VideoStreamHandlerActivity"
+            android:name="org.betteropenwith.app.VideoStreamHandlerActivity"
             android:targetActivity=".FileHandlerActivity">
             <intent-filter>
                 <action android:name="android.intent.action.VIEW" />
@@ -118,7 +118,7 @@
                 android:value="5" />
         </activity-alias>
         <activity-alias
-            android:name="com.aboutmycode.openwith.app.ImageFileHandlerActivity"
+            android:name="org.betteropenwith.app.ImageFileHandlerActivity"
             android:targetActivity=".FileHandlerActivity">
             <intent-filter>
                 <action android:name="android.intent.action.VIEW" />
@@ -150,7 +150,7 @@
                 android:value="6" />
         </activity-alias>
         <activity-alias
-            android:name="com.aboutmycode.openwith.app.AudioFileHandlerActivity"
+            android:name="org.betteropenwith.app.AudioFileHandlerActivity"
             android:targetActivity=".FileHandlerActivity">
             <intent-filter>
                 <action android:name="android.intent.action.VIEW" />
@@ -185,7 +185,7 @@
                 android:value="2" />
         </activity-alias>
         <activity-alias
-            android:name="com.aboutmycode.openwith.app.AudioStreamHandlerActivity"
+            android:name="org.betteropenwith.app.AudioStreamHandlerActivity"
             android:targetActivity=".FileHandlerActivity">
             <intent-filter>
                 <action android:name="android.intent.action.VIEW" />
@@ -203,7 +203,7 @@
                 android:value="3" />
         </activity-alias>
         <activity-alias
-            android:name="com.aboutmycode.openwith.app.GeoLocationActivity"
+            android:name="org.betteropenwith.app.GeoLocationActivity"
             android:targetActivity=".FileHandlerActivity">
             <intent-filter>
                 <action android:name="android.intent.action.VIEW" />
@@ -216,7 +216,7 @@
                 android:value="8" />
         </activity-alias>
         <activity-alias
-            android:name="com.aboutmycode.openwith.app.EpubActivity"
+            android:name="org.betteropenwith.app.EpubActivity"
             android:targetActivity=".FileHandlerActivity">
             <intent-filter>
                 <action android:name="android.intent.action.VIEW" />
@@ -229,7 +229,7 @@
                 android:value="9" />
         </activity-alias>
         <activity-alias
-            android:name="com.aboutmycode.openwith.app.TextActivity"
+            android:name="org.betteropenwith.app.TextActivity"
             android:targetActivity=".FileHandlerActivity">
             <intent-filter>
                 <action android:name="android.intent.action.VIEW" />
@@ -242,7 +242,7 @@
                 android:value="10" />
         </activity-alias>
         <activity-alias
-            android:name="com.aboutmycode.openwith.app.EmailActivity"
+            android:name="org.betteropenwith.app.EmailActivity"
             android:targetActivity=".FileHandlerActivity">
             <intent-filter>
                 <action android:name="android.intent.action.VIEW" />
@@ -255,7 +255,7 @@
                 android:value="11" />
         </activity-alias>
         <activity-alias
-            android:name="com.aboutmycode.betteropenwith.app.dialer"
+            android:name="org.betteropenwith.app.dialer"
             android:targetActivity=".FileHandlerActivity">
             <intent-filter>
                 <action android:name="android.intent.action.VIEW" />
@@ -269,7 +269,7 @@
                 android:value="12" />
         </activity-alias>
         <activity-alias
-            android:name="com.aboutmycode.betteropenwith.app.calendar"
+            android:name="org.betteropenwith.app.calendar"
             android:targetActivity=".FileHandlerActivity">
             <intent-filter>
                 <action android:name="android.intent.action.VIEW" />
@@ -283,7 +283,7 @@
                 android:value="13" />
         </activity-alias>
         <activity-alias
-            android:name="com.aboutmycode.betteropenwith.app.camera"
+            android:name="org.betteropenwith.app.camera"
             android:targetActivity=".FileHandlerActivity">
             <intent-filter>
                 <action android:name="android.media.action.IMAGE_CAPTURE" />
