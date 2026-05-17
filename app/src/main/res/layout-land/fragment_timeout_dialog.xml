@@ -4,7 +4,7 @@
     android:layout_height="match_parent"
     android:orientation="horizontal"
     android:weightSum="10"
-    tools:context="com.aboutmycode.betteropenwith.TimeoutDialogFragment">
+    tools:context="org.betteropenwith.TimeoutDialogFragment">
 
     <TextView
         android:id="@+id/text_dialog_message"

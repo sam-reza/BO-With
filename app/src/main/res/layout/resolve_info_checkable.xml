@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 
-<com.aboutmycode.betteropenwith.common.layout.CheckableRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<org.betteropenwith.common.layout.CheckableRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:descendantFocusability="blocksDescendants"
@@ -42,4 +42,4 @@
         android:contentDescription="@string/toggle_app_visibility"
         android:onClick="hideClicked"
         android:src="@drawable/ic_action_enabled" />
-</com.aboutmycode.betteropenwith.common.layout.CheckableRelativeLayout>
+</org.betteropenwith.common.layout.CheckableRelativeLayout>
