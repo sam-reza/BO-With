@@ -5,7 +5,7 @@
     <PreferenceCategory
         android:key="pref_key_general_settings_group"
         android:title="@string/general_options">
-        <com.aboutmycode.betteropenwith.settings.WorkingListPreference
+        <org.betteropenwith.settings.WorkingListPreference
             android:defaultValue="null"
             android:dialogTitle="@string/appLanguage"
             android:entries="@array/pref_languages"
@@ -17,7 +17,7 @@
     <PreferenceCategory
         android:key="pref_key_popup_layout_group"
         android:title="@string/popup_options">
-        <com.aboutmycode.betteropenwith.settings.NumberPickerDialogPreference
+        <org.betteropenwith.settings.NumberPickerDialogPreference
             android:defaultValue="@integer/default_timeout"
             android:dialogMessage="@string/set_time_message"
             android:key="timeout"
@@ -26,21 +26,21 @@
             android:title="@string/timeout"
             app:min="1"
             app:summaryKey="@string/timeoutSummary" />
-        <com.aboutmycode.betteropenwith.settings.WorkingListPreference
+        <org.betteropenwith.settings.WorkingListPreference
             android:defaultValue="@string/bottomValue"
             android:entries="@array/positions"
             android:entryValues="@array/position_values"
             android:key="position"
             android:summary="@string/position_summary"
             android:title="@string/position" />
-        <com.aboutmycode.betteropenwith.settings.WorkingListPreference
+        <org.betteropenwith.settings.WorkingListPreference
             android:defaultValue="@string/listValue"
             android:entries="@array/layouts"
             android:entryValues="@array/layout_values"
             android:key="layout"
             android:summary="@string/layout_summary"
             android:title="@string/layout" />
-        <com.aboutmycode.betteropenwith.settings.NumberPickerDialogPreference
+        <org.betteropenwith.settings.NumberPickerDialogPreference
             android:defaultValue="@integer/default_columns"
             android:dialogMessage="@string/select_columns"
             android:key="gridColumns"
@@ -49,7 +49,7 @@
             android:title="@string/column_number"
             app:min="1"
             app:summaryKey="%s" />
-        <com.aboutmycode.betteropenwith.settings.WorkingListPreference
+        <org.betteropenwith.settings.WorkingListPreference
             android:defaultValue="@string/fromBottomValue"
             android:entries="@array/animations"
             android:entryValues="@array/animation_values"
@@ -68,14 +68,14 @@
             android:summaryOff="@string/disableTimerOff"
             android:summaryOn="@string/disableTimerOn"
             android:title="@string/disableTimer" />
-        <com.aboutmycode.betteropenwith.settings.WorkingListPreference
+        <org.betteropenwith.settings.WorkingListPreference
             android:defaultValue="@string/mediumValue"
             android:entries="@array/sizes"
             android:entryValues="@array/size_values"
             android:key="size"
             android:summary="%s"
             android:title="@string/textSize" />
-        <com.aboutmycode.betteropenwith.settings.WorkingListPreference
+        <org.betteropenwith.settings.WorkingListPreference
             android:defaultValue="@string/lightValue"
             android:entries="@array/themes"
             android:entryValues="@array/theme_values"
