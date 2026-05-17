@@ -1,0 +1,55 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 31
+
+    defaultConfig {
+        minSdkVersion 15
+        targetSdkVersion 31
+        versionCode 59
+        versionName "1.4.16"
+    }
+
+    final Console console = System.console();
+    if (console != null) {
+        // Building from console
+        signingConfigs {
+            release {
+                storeFile file(console.readLine("Enter keystore path: "))
+                storePassword console.readLine("Enter keystore password: ")
+                keyAlias console.readLine("Enter alias key: ")
+                keyPassword console.readLine("Enter key password: ")
+            }
+        }
+    } else {
+        // Building from IDE's "Run" button
+        signingConfigs {
+            release {
+            }
+        }
+    }
+
+    lintOptions {
+        abortOnError false
+        disable 'MissingTranslation'
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.txt'
+            signingConfig signingConfigs.release
+        }
+    }
+}
+
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation 'nl.qbusict:cupboard:2.0.1'
+    implementation 'ch.acra:acra:4.5.0'
+    implementation 'com.readystatesoftware.sqliteasset:sqliteassethelper:+'
+    implementation 'com.github.gabrielemariotti.changeloglib:library:1.5.1'
+    implementation 'com.github.Todd-Davies:ProgressWheel:1.1'
+    implementation 'com.robinhood.ticker:ticker:1.1.1'
+}

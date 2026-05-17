@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="pdf">Fitxers PDF</string>
+    <string name="audio">Fitxers d\'àudio</string>
+    <string name="video">Fitxers de vídeo</string>
+    <string name="images">Imatges</string>
+    <string name="video_stream">Transmissió de vídeo</string>
+    <string name="audio_stream">Transmissió d\'àudio</string>
+    <string name="browser">Navegador</string>
+    <string name="geo">Ubicació</string>
+    <string name="epub">Llibre electrònic (epub)</string>
+    <string name="txt">Fitxers de text</string>
+    <string name="email">Correu electrònic</string>
+    <string name="dialer">Marcador</string>
+    <string name="camera">Càmera</string>
+    <string name="calendar">Calendari</string>
+    <string name="excel">Microsoft Excel</string>
+    <string name="html">Fitxers html</string>
+    <string name="powerpoint">Microsoft PowerPoint</string>
+    <string name="torrent">Torrent</string>
+    <string name="word">Microsoft Word</string>
+    <string name="xml">Fitxers XML</string>
+    <string name="zip">Fitxers  Zip</string>
+</resources>

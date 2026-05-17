@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/listInclude"
+        layout="@android:layout/list_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/action_container"
+        android:layout_weight="1" />
+
+    <GridView
+        android:id="@+id/gridView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:numColumns="2" />
+
+    <LinearLayout
+        android:id="@+id/timerFooter"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="9">
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="3"
+            android:gravity="center">
+
+            <com.todddavies.components.progressbar.ProgressWheel
+                android:id="@+id/timerCountDown"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_centerInParent="true"
+                app:barColor="@color/accent"
+                app:barWidth="3dp"
+                app:rimColor="@color/primary"
+                app:rimWidth="1dp"
+                app:textColor="@color/primary_text"
+                app:textSize="16sp" />
+
+            <com.robinhood.ticker.TickerView
+                android:id="@+id/tickerView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                app:ticker_animationDuration="900" />
+        </RelativeLayout>
+
+        <ImageButton
+            android:id="@+id/pauseButton"
+            style="?android:buttonBarButtonStyle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:contentDescription="@string/pause"
+            android:src="@drawable/ic_action_app_settings" />
+
+        <ImageButton
+            android:id="@+id/settingsButton"
+            style="?android:buttonBarButtonStyle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:contentDescription="@string/action_settings"
+            android:src="@drawable/ic_action_app_settings" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/action_container"
+        style="?android:attr/buttonBarStyle"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="10"></LinearLayout>
+</LinearLayout>

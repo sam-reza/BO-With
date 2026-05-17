@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools"
+    tools:ignore="MissingTranslation">
+    <string-array name="layouts">
+        <item>@string/list</item>
+        <item>@string/grid</item>
+    </string-array>
+    <string-array name="positions">
+        <item>@string/bottom</item>
+        <item>@string/middle</item>
+    </string-array>
+    <string-array name="layout_values">
+        <item>@string/listValue</item>
+        <item>@string/gridValue</item>
+    </string-array>
+    <string-array name="position_values">
+        <item>@string/bottomValue</item>
+        <item>@string/middleValue</item>
+    </string-array>
+    <string name="listValue">0</string>
+    <string name="gridValue">1</string>
+    <string name="bottomValue">0</string>
+    <string name="middleValue">1</string>
+
+    <string-array name="sizes">
+        <item>@string/small</item>
+        <item>@string/medium</item>
+    </string-array>
+    <string-array name="size_values">
+        <item>@string/smallValue</item>
+        <item>@string/mediumValue</item>
+    </string-array>
+    <string name="smallValue">0</string>
+    <string name="mediumValue">1</string>
+
+    <string-array name="themes">
+        <item>@string/light</item>
+        <item>@string/dark</item>
+    </string-array>
+    <string-array name="theme_values">
+        <item>@string/lightValue</item>
+        <item>@string/darkValue</item>
+    </string-array>
+    <string name="lightValue">0</string>
+    <string name="darkValue">1</string>
+
+    <string-array name="animations">
+        <item>@string/slideFromBottom</item>
+        <item>@string/slideFromLeft</item>
+        <item>@string/slideFromRight</item>
+        <item>@string/slideNone</item>
+    </string-array>
+    <string-array name="animation_values">
+        <item>@string/fromBottomValue</item>
+        <item>@string/fromLeftValue</item>
+        <item>@string/fromRightValue</item>
+        <item>@string/noneValue</item>
+    </string-array>
+    <string name="fromLeftValue">0</string>
+    <string name="fromRightValue">1</string>
+    <string name="fromBottomValue">2</string>
+    <string name="noneValue">3</string>
+
+    <string-array name="pref_languages">
+        <item>@string/systemLocale</item>
+        <item>English</item>
+        <item>Deutsch</item>
+        <item>Français</item>
+        <item>Español</item>
+        <item>Português</item>
+        <item>Italiano</item>
+        <item>Català</item>
+        <item>Čeština</item>
+        <item>العربية</item>
+        <item>Ελληνική</item>
+        <item>Nederlands</item>
+        <item>Brazilian Portuguese</item>
+        <item>Lithuanian</item>
+        <item>Polish</item>
+        <item>Turkish</item>
+        <item>Russian</item>
+    </string-array>
+    <string-array name="pref_languages_values">
+        <item>null</item>
+        <item>en</item>
+        <item>de</item>
+        <item>fr</item>
+        <item>es</item>
+        <item>pt</item>
+        <item>it</item>
+        <item>ca</item>
+        <item>cs</item>
+        <item>ar</item>
+        <item>el</item>
+        <item>nl</item>
+        <item>pt-rBR</item>
+        <item>lt</item>
+        <item>pl</item>
+        <item>tr</item>
+        <item>ru</item>
+    </string-array>
+</resources>

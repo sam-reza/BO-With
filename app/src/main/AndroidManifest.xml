@@ -1,0 +1,447 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.aboutmycode.betteropenwith">
+
+    <application
+        android:name=".BetterOpenWithApplication"
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme"
+        tools:replace="android:icon,android:theme">
+        <activity
+            android:name="com.todddavies.components.progressbar.Main"
+            android:label="@string/app_name" >
+            <intent-filter tools:node="removeAll" />
+        </activity>
+        <activity android:exported="true"
+            android:name=".HandlerListActivity"
+            android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".FileHandlerActivity"
+            android:excludeFromRecents="true"
+            android:label="@string/title_activity_file_handler"
+            android:theme="@android:style/Theme.Holo.Dialog" />
+
+        <activity-alias android:exported="true"
+            android:name="com.aboutmycode.openwith.app.PdfFileHandlerActivity"
+            android:targetActivity=".FileHandlerActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.BROWSABLE" />
+                <category android:name="android.intent.category.DEFAULT" />
+
+                <data android:mimeType="application/pdf" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.BROWSABLE" />
+                <category android:name="android.intent.category.DEFAULT" />
+
+                <data
+                    android:host="*"
+                    android:pathPattern=".*\\.pdf"
+                    android:scheme="http" />
+                <data
+                    android:host="*"
+                    android:pathPattern=".*\\.pdf"
+                    android:scheme="https" />
+            </intent-filter>
+
+            <meta-data
+                android:name="id"
+                android:value="1" />
+        </activity-alias>
+        <activity-alias android:exported="true"
+            android:name="com.aboutmycode.openwith.app.VideoFileHandlerActivity"
+            android:targetActivity=".FileHandlerActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.BROWSABLE" />
+                <category android:name="android.intent.category.DEFAULT" />
+
+                <data android:mimeType="video/*" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.BROWSABLE" />
+                <category android:name="android.intent.category.DEFAULT" />
+
+                <data android:scheme="http" />
+                <data android:scheme="https" />
+                <data android:host="*" />
+                <data android:pathPattern=".*\\.aaf" />
+                <data android:pathPattern=".*\\.3gp" />
+                <data android:pathPattern=".*\\.avi" />
+                <data android:pathPattern=".*\\.flv" />
+                <data android:pathPattern=".*\\.mpg" />
+                <data android:pathPattern=".*\\.mpeg" />
+                <data android:pathPattern=".*\\.mkv" />
+                <data android:pathPattern=".*\\.mp4" />
+                <data android:pathPattern=".*\\.mov" />
+                <data android:pathPattern=".*\\.ogg" />
+                <data android:pathPattern=".*\\.wmv" />
+                <data android:pathPattern=".*\\.ts" />
+                <data android:pathPattern=".*\\.gvp" />
+                <data android:pathPattern=".*\\.ogm" />
+                <data android:pathPattern=".*\\.ogv" />
+                <data android:pathPattern=".*\\.3ga" />
+                <data android:pathPattern=".*\\.3gp2" />
+                <data android:pathPattern=".*\\.webm" />
+                <data android:pathPattern=".*\\.rm" />
+            </intent-filter>
+
+            <meta-data
+                android:name="id"
+                android:value="4" />
+        </activity-alias>
+        <activity-alias android:exported="true"
+            android:name="com.aboutmycode.openwith.app.VideoStreamHandlerActivity"
+            android:targetActivity=".FileHandlerActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.BROWSABLE" />
+                <category android:name="android.intent.category.DEFAULT" />
+
+                <data android:scheme="http" />
+                <data android:scheme="https" />
+                <data android:mimeType="video/*" />
+            </intent-filter>
+
+            <meta-data
+                android:name="id"
+                android:value="5" />
+        </activity-alias>
+        <activity-alias android:exported="true"
+            android:name="com.aboutmycode.openwith.app.ImageFileHandlerActivity"
+            android:targetActivity=".FileHandlerActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.BROWSABLE" />
+                <category android:name="android.intent.category.DEFAULT" />
+
+                <data android:mimeType="image/*" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.BROWSABLE" />
+                <category android:name="android.intent.category.DEFAULT" />
+
+                <data android:scheme="http" />
+                <data android:scheme="https" />
+                <data android:host="*" />
+                <data android:pathPattern=".*\\.gif" />
+                <data android:pathPattern=".*\\.jpeg" />
+                <data android:pathPattern=".*\\.jpg" />
+                <data android:pathPattern=".*\\.png" />
+                <data android:pathPattern=".*\\.bmp" />
+                <data android:pathPattern=".*\\.webp" />
+            </intent-filter>
+
+            <meta-data
+                android:name="id"
+                android:value="6" />
+        </activity-alias>
+        <activity-alias android:exported="true"
+            android:name="com.aboutmycode.openwith.app.AudioFileHandlerActivity"
+            android:targetActivity=".FileHandlerActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.BROWSABLE" />
+                <category android:name="android.intent.category.DEFAULT" />
+
+                <data android:mimeType="audio/*" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.BROWSABLE" />
+                <category android:name="android.intent.category.DEFAULT" />
+
+                <data android:scheme="http" />
+                <data android:scheme="https" />
+                <data android:host="*" />
+                <data android:pathPattern=".*\\.3gp" />
+                <data android:pathPattern=".*\\.mp3" />
+                <data android:pathPattern=".*\\.wma" />
+                <data android:pathPattern=".*\\.wav" />
+                <data android:pathPattern=".*\\.rm" />
+                <data android:pathPattern=".*\\.mid" />
+                <data android:pathPattern=".*\\.ogg" />
+                <data android:pathPattern=".*\\.midi" />
+                <data android:pathPattern=".*\\.mpa" />
+            </intent-filter>
+
+            <meta-data
+                android:name="id"
+                android:value="2" />
+        </activity-alias>
+        <activity-alias android:exported="true"
+            android:name="com.aboutmycode.openwith.app.AudioStreamHandlerActivity"
+            android:targetActivity=".FileHandlerActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.BROWSABLE" />
+                <category android:name="android.intent.category.DEFAULT" />
+
+                <data android:scheme="http" />
+                <data android:scheme="https" />
+                <data android:mimeType="audio/*" />
+            </intent-filter>
+
+            <meta-data
+                android:name="id"
+                android:value="3" />
+        </activity-alias>
+        <activity-alias android:exported="true"
+            android:name="com.aboutmycode.openwith.app.GeoLocationActivity"
+            android:targetActivity=".FileHandlerActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+                <data android:scheme="geo" />
+            </intent-filter>
+
+            <meta-data
+                android:name="id"
+                android:value="8" />
+        </activity-alias>
+        <activity-alias android:exported="true"
+            android:name="com.aboutmycode.openwith.app.EpubActivity"
+            android:targetActivity=".FileHandlerActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+                <data android:mimeType="application/epub+zip" />
+            </intent-filter>
+
+            <meta-data
+                android:name="id"
+                android:value="9" />
+        </activity-alias>
+        <activity-alias android:exported="true"
+            android:name="com.aboutmycode.openwith.app.TextActivity"
+            android:targetActivity=".FileHandlerActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+                <data android:mimeType="text/plain" />
+            </intent-filter>
+
+            <meta-data
+                android:name="id"
+                android:value="10" />
+        </activity-alias>
+        <activity-alias android:exported="true"
+            android:name="com.aboutmycode.openwith.app.EmailActivity"
+            android:targetActivity=".FileHandlerActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <action android:name="android.intent.action.SENDTO" />
+                <data android:scheme="mailto" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+            </intent-filter>
+            <meta-data
+                android:name="id"
+                android:value="11" />
+        </activity-alias>
+        <activity-alias android:exported="true"
+            android:name="com.aboutmycode.betteropenwith.app.dialer"
+            android:targetActivity=".FileHandlerActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <action android:name="android.intent.action.DIAL" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+                <data android:scheme="tel" />
+            </intent-filter>
+            <meta-data
+                android:name="id"
+                android:value="12" />
+        </activity-alias>
+        <activity-alias android:exported="true"
+            android:name="com.aboutmycode.betteropenwith.app.calendar"
+            android:targetActivity=".FileHandlerActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <action android:name="android.intent.action.EDIT" />
+                <action android:name="android.intent.action.INSERT" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+                <data android:mimeType="vnd.android.cursor.item/event" />
+            </intent-filter>
+            <meta-data
+                android:name="id"
+                android:value="13" />
+        </activity-alias>
+        <activity-alias android:exported="true"
+            android:name="com.aboutmycode.betteropenwith.app.camera"
+            android:targetActivity=".FileHandlerActivity">
+            <intent-filter>
+                <action android:name="android.media.action.IMAGE_CAPTURE" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+            <meta-data
+                android:name="id"
+                android:value="14" />
+        </activity-alias>
+        <activity-alias android:exported="true"
+            android:name="com.aboutmycode.betteropenwith.app.torrent"
+            android:targetActivity=".FileHandlerActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+                <data android:mimeType="application/x-bittorrent" />
+            </intent-filter>
+            <meta-data
+                android:name="id"
+                android:value="15" />
+        </activity-alias>
+        <activity-alias android:exported="true"
+            android:name="com.aboutmycode.betteropenwith.app.word"
+            android:targetActivity=".FileHandlerActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+                <data android:mimeType="application/msword" />
+                <data android:mimeType="application/vnd.openxmlformats-officedocument.wordprocessingml.document" />
+            </intent-filter>
+            <meta-data
+                android:name="id"
+                android:value="16" />
+        </activity-alias>
+        <activity-alias android:exported="true"
+            android:name="com.aboutmycode.betteropenwith.app.excel"
+            android:targetActivity=".FileHandlerActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+                <data android:mimeType="application/vnd.ms-excel" />
+                <data android:mimeType="application/vnd.openxmlformats-officedocument.spreadsheetml.sheet" />
+            </intent-filter>
+            <meta-data
+                android:name="id"
+                android:value="17" />
+        </activity-alias>
+        <activity-alias android:exported="true"
+            android:name="com.aboutmycode.betteropenwith.app.powerpoint"
+            android:targetActivity=".FileHandlerActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+                <data android:mimeType="application/vnd.ms-powerpoint" />
+                <data android:mimeType="application/vnd.openxmlformats-officedocument.presentationml.presentation" />
+            </intent-filter>
+            <meta-data
+                android:name="id"
+                android:value="18" />
+        </activity-alias>
+        <activity-alias android:exported="true"
+            android:name="com.aboutmycode.betteropenwith.app.html"
+            android:targetActivity=".FileHandlerActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+                <data android:mimeType="text/html" />
+                <data android:mimeType="text/htm" />
+            </intent-filter>
+            <meta-data
+                android:name="id"
+                android:value="19" />
+        </activity-alias>
+        <activity-alias android:exported="true"
+            android:name="com.aboutmycode.betteropenwith.app.xml"
+            android:targetActivity=".FileHandlerActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+                <data android:mimeType="text/xml" />
+            </intent-filter>
+            <meta-data
+                android:name="id"
+                android:value="20" />
+        </activity-alias>
+        <activity-alias android:exported="true"
+            android:name="com.aboutmycode.betteropenwith.app.zip"
+            android:targetActivity=".FileHandlerActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+                <data android:mimeType="application/zip" />
+            </intent-filter>
+            <meta-data
+                android:name="id"
+                android:value="21" />
+        </activity-alias>
+
+        <activity
+            android:name=".settings.SettingsActivity"
+            android:label="@string/title_activity_settings" />
+        <activity
+            android:name=".HandlerDetailsActivity"
+            android:label=""
+            android:parentActivityName=".HandlerListActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".HandlerListActivity" />
+        </activity>
+        <activity
+            android:name=".AboutActivity"
+            android:label="@string/action_about" />
+        <activity
+            android:name=".BrowserDetailsActivity"
+            android:label=""
+            android:parentActivityName=".HandlerListActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".HandlerListActivity" />
+        </activity>
+        <activity android:exported="true"
+            android:name=".SiteHandlerActivity"
+            android:excludeFromRecents="true"
+            android:label="@string/title_activity_file_handler"
+            android:theme="@android:style/Theme.Holo.Dialog">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.BROWSABLE" />
+                <category android:name="android.intent.category.DEFAULT" />
+
+                <data android:scheme="http" />
+                <data android:scheme="https" />
+            </intent-filter>
+
+            <meta-data
+                android:name="id"
+                android:value="7" />
+        </activity>
+    </application>
+
+</manifest>

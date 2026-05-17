@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="pdf">Archivos PDF</string>
+    <string name="audio">Archivos de audio</string>
+    <string name="video">Archivos de video</string>
+    <string name="images">Imágenes</string>
+    <string name="video_stream">Video en línea</string>
+    <string name="audio_stream">Audio en línea</string>
+    <string name="browser">Navegador web</string>
+    <string name="geo">Posición geográfica</string>
+    <string name="epub">Libro electrónico (epub)</string>
+    <string name="txt">Archivos de texto</string>
+    <string name="email">Correo electrónico</string>
+    <string name="dialer">Marcador de llamadas</string>
+    <string name="camera">Cámara</string>
+    <string name="calendar">Calendario</string>
+    <string name="excel">Libro Excel</string>
+    <string name="html">Archivos Html</string>
+    <string name="powerpoint">Presentación PowerPoint</string>
+    <string name="torrent">Torrent</string>
+    <string name="word">Documento Word</string>
+    <string name="xml">Archivos XML</string>
+    <string name="zip">Fichero Zip</string>
+</resources>

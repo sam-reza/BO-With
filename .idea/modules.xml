@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/BetterOpenWith.iml" filepath="$PROJECT_DIR$/.idea/modules/BetterOpenWith.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/BetterOpenWith.app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/BetterOpenWith.app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/BetterOpenWith.app.androidTest.iml" filepath="$PROJECT_DIR$/.idea/modules/app/BetterOpenWith.app.androidTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/BetterOpenWith.app.main.iml" filepath="$PROJECT_DIR$/.idea/modules/app/BetterOpenWith.app.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/BetterOpenWith.app.unitTest.iml" filepath="$PROJECT_DIR$/.idea/modules/app/BetterOpenWith.app.unitTest.iml" />
+    </modules>
+  </component>
+</project>
