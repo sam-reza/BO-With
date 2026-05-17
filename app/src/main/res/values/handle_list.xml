@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="pdf">PDF Files</string>
+    <string name="audio">Audio Files</string>
+    <string name="video">Video Files</string>
+    <string name="images">Images</string>
+    <string name="video_stream">Video Stream</string>
+    <string name="audio_stream">Audio Stream</string>
+    <string name="browser">Browser</string>
+    <string name="geo">Geo Location</string>
+    <string name="epub">Ebook (epub)</string>
+    <string name="txt">Text Files</string>
+    <string name="email">Email</string>
+    <string name="dialer">Dialer</string>
+    <string name="camera">Camera</string>
+    <string name="calendar">Calendar</string>
+</resources>
