@@ -7,17 +7,17 @@
         android:name=".BetterOpenWithApplication"
         android:allowBackup="true"
         android:icon="@drawable/ic_launcher"
-        android:label="BO-With"
+        android:label="@string/app_name"
         android:theme="@style/AppTheme"
-        tools:replace="android:icon,android:theme">
+        tools:replace="android:icon,android:theme,android:label">
         <activity
             android:name="com.todddavies.components.progressbar.Main"
-            android:label="BO-With" >
+            android:label="@string/app_name" >
             <intent-filter tools:node="removeAll" />
         </activity>
         <activity android:exported="true"
             android:name=".HandlerListActivity"
-            android:label="BO-With">
+            android:label="@string/app_name">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
